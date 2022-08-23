@@ -1,0 +1,30 @@
+import 'package:flutter/material.dart';
+
+//The main() function is the starting point for a 'Flutter' project
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.black,
+        appBar: AppBar(
+          centerTitle: true,
+          backgroundColor: Colors.grey,
+          title: Text("I Am Poor",
+            style: TextStyle(
+              decoration: TextDecoration.none,
+              fontFamily:'Raleway',
+          ),
+          ),
+        ),
+
+        body: const Center(
+          child: Image(
+            image: AssetImage(
+                'assets/images/iampoor.png'),
+          ),
+        ),
+      ),
+    ),
+  );
+}
+
